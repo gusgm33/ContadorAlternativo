@@ -29,22 +29,22 @@ class MainActivity : AppCompatActivity() {
 
             override fun onClick(v: View?) {
 
+                contadorNuevo += 1
 
-
-                contadorNuevo +=1
-                texto?.append("usuario!!  boton se ha clickeado $contadorNuevo vez")
-
-                Toast.makeText(this@MainActivity,"se clickeo el boton",Toast.LENGTH_SHORT).show()
-
+                    texto?.append("usuario!!  boton se ha clickeado  $contadorNuevo vez\n")
+                if(contadorNuevo == 10) {
+                    Toast.makeText(this@MainActivity, "se clickeo el boton $contadorNuevo veces ", Toast.LENGTH_SHORT).show()
+                }
 
             }
 
         })
 
+
     }
 
     private fun avisoEmergente(view:View){
 
-        Toast.makeText(this,"se boton se ha clickeado 10 veces",Toast.LENGTH_SHORT).show()
+        Toast.makeText(this,"se boton se ha clickeado 10 veces " ,Toast.LENGTH_SHORT) .show()
     }
 }
