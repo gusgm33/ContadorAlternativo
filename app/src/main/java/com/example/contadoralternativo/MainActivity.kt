@@ -7,10 +7,11 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
+import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
 
-    private var entradaUsuario: EditText? = null
+
     private var boton:Button?=null
     private var texto:TextView?=null
 
@@ -21,6 +22,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        var entradaUsuario: EditText? = null
         boton = findViewById<Button>(R.id.botoncito)
         entradaUsuario = findViewById<EditText>(R.id.editText)
         texto = findViewById<TextView>(R.id.textView)
@@ -31,7 +33,8 @@ class MainActivity : AppCompatActivity() {
 
                 contadorNuevo += 1
 
-                    texto?.append("usuario!!  boton se ha clickeado  $contadorNuevo vez\n")
+
+                    texto?.append("usuario: ${entradaUsuario.text.toString()} !!  boton se ha clickeado  $contadorNuevo vez\n")
                 if(contadorNuevo == 10) {
                     Toast.makeText(this@MainActivity, "se clickeo el boton $contadorNuevo veces ", Toast.LENGTH_SHORT).show()
                 }
