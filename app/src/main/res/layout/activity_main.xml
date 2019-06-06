@@ -7,12 +7,15 @@
         android:layout_height="match_parent"
         tools:context=".MainActivity">
     <TextView
-            android:layout_width="354dp"
-            android:layout_height="466dp"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
             android:id="@+id/textView"
-            tools:layout_editor_absoluteY="138dp" tools:layout_editor_absoluteX="29dp"/>
+            app:layout_constraintTop_toBottomOf="@+id/editText" android:layout_marginBottom="127dp"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="28dp" app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginStart="28dp" android:layout_marginEnd="28dp" android:layout_marginRight="28dp"/>
     <Button
-            android:text="Button"
+            android:text="BOTON"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/botoncito" android:layout_marginTop="47dp"
@@ -21,16 +24,16 @@
             app:layout_constraintTop_toTopOf="parent" android:layout_marginEnd="3dp" android:layout_marginRight="3dp"/>
     <EditText
             android:layout_width="wrap_content"
-            android:layout_height="46dp"
+            android:layout_height="61dp"
             android:inputType="textPersonName"
             android:ems="10"
             android:id="@+id/editText"
-            android:layout_marginTop="57dp" app:layout_constraintEnd_toStartOf="@+id/botoncito"
-            android:layout_marginBottom="43dp" app:layout_constraintBottom_toTopOf="@+id/textView"
+            android:layout_marginTop="53dp" app:layout_constraintEnd_toStartOf="@+id/botoncito"
+            android:layout_marginBottom="39dp" app:layout_constraintBottom_toTopOf="@+id/textView"
             app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
             android:layout_marginEnd="20dp" android:layout_marginRight="20dp" android:hint="Ingrese El nombre"/>
     <TextView
-            android:text="Desaroolado por: gustavo gonzales"
+            android:text="Desarrollado por:Gustavo Gonzales"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
